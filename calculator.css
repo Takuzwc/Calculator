@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+.parContainer {
+  position: absolute;
+  background: black;
+  margin: 200px;
+  width: 23%;
+  height: 525px;
+}
+.child {
+  margin-top: 30px;
+}
+.top {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(4, 70px);
+  grid-template-rows: repeat(4, 70px);
+  padding-left: 7px;
+}
+.numDisplay {
+  font-size: 60px;
+  font-weight: 20px;
+  color: #fff;
+  margin-left: 10px;
+}
+.btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 25px;
+  margin: 2px;
+  border: none;
+}
+.h3 {
+  font-size: 30px;
+  font-weight: 30px;
+}
+.sq {
+  width: 120px;
+  height: 55px;
+  border-radius: 20px;
+  margin: 2px;
+  border: none;
+}
+.reset {
+  width: 120px;
+  height: 55px;
+  border-radius: 20px;
+  margin-top: 10px;
+  border: none;
+}
+.res {
+  margin-left: 70px;
+}
+.num {
+  background: rgb(200, 196, 196);
+}
+.complexfun {
+  background: #04bcef;
+}
+.func {
+  background: #03eeb0;
+}
