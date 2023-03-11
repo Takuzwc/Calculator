@@ -15,42 +15,43 @@
       src="https://kit.fontawesome.com/fb54eb76ff.js"
       crossorigin="anonymous"
     ></script>
+    <script src="calculator.js" defer></script>
     <title>Calculator</title>
   </head>
   <body>
     <div class="parContainer">
-      <h1 class="numDisplay">0</h1>
-      <div class="child">
-        <div class="top">
-          <button class="btn complexfun"><h3>2√</h3></button>
-          <button class="btn complexfun"><h3>X^2</h3></button>
-          <button class="btn complexfun"><h3>π</h3></button>
-          <button class="btn func"><h3>÷</h3></button>
-          <button class="btn num"><h3>1</h3></button>
-          <button class="btn num"><h3>2</h3></button>
-          <button class="btn num"><h3>3</h3></button>
-          <button class="btn func"><h3>X</h3></button>
-          <button class="btn num"><h3>4</h3></button>
-          <button class="btn num"><h3>5</h3></button>
-          <button class="btn num"><h3>6</h3></button>
-          <button class="btn func"><h3>-</h3></button>
-          <button class="btn num"><h3>7</h3></button>
-          <button class="btn num"><h3>8</h3></button>
-          <button class="btn num"><h3>9</h3></button>
-          <button class="btn func"><h3>+</h3></button>
-          <button class="btn complexfun"><h3>.</h3></button>
-          <button class="btn num"><h3>0</h3></button>
-          <button class="func sq"><h3>=</h3></button>
-          <br />
-          <button class="btn complexfun reset">
-            <i class="fa fa-trash" aria-hidden="true"></i>
-          </button>
-          <button class="btn complexfun res reset">
-            <i class="fa fa-backward" aria-hidden="true"></i>
-          </button>
-        </div>
+      <div class="output">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+      </div>
+      <div class="top">
+        <button data-operation class="btn complexfun">2√</button>
+        <button data-operation class="btn complexfun">X^2</button>
+        <button data-operation class="btn complexfun">π</button>
+        <button data-operation class="btn func">÷</button>
+        <button data-number class="btn num">1</button>
+        <button data-number class="btn num">2</button>
+        <button data-number class="btn num">3</button>
+        <button data-operation class="btn func"><h3>X</h3></button>
+        <button data-number class="btn num"><h3>4</h3></button>
+        <button data-number class="btn num"><h3>5</h3></button>
+        <button data-number class="btn num"><h3>6</h3></button>
+        <button data-operation class="btn func"><h3>-</h3></button>
+        <button data-number class="btn num">7</button>
+        <button data-number class="btn num">8</button>
+        <button data-number class="btn num">9</button>
+        <button data-operation class="btn func">+</button>
+        <button data-number class="btn complexfun">.</button>
+        <button data-number class="btn num">0</button>
+        <button data-equals class="func sq">=</button>
+        <br />
+        <button data-all-clear class="btn complexfun reset">
+          <i class="fa fa-trash" aria-hidden="true"></i>
+        </button>
+        <button data-delete class="btn complexfun res reset">
+          <i class="fa fa-backward" aria-hidden="true"></i>
+        </button>
       </div>
     </div>
-    <script src="calculator.js"></script>
   </body>
 </html>

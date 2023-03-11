@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .parContainer {
@@ -12,21 +12,34 @@
   width: 23%;
   height: 525px;
 }
-.child {
-  margin-top: 30px;
-}
 .top {
   display: grid;
   position: relative;
   grid-template-columns: repeat(4, 70px);
   grid-template-rows: repeat(4, 70px);
   padding-left: 7px;
+  font-size: 30px;
+  font-weight: 30px;
 }
-.numDisplay {
-  font-size: 60px;
-  font-weight: 20px;
-  color: #fff;
-  margin-left: 10px;
+.output {
+  grid-column: 1/-1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-size: 25px;
+  height: 100px;
+}
+.output .previous-operand {
+  color: #738a84;
+  font-weight: 1.5rem;
+}
+.output .current-operand {
+  color: #fbfffe;
+  font-weight: 1.5rem;
 }
 .btn {
   width: 55px;
@@ -34,10 +47,6 @@
   border-radius: 25px;
   margin: 2px;
   border: none;
-}
-.h3 {
-  font-size: 30px;
-  font-weight: 30px;
 }
 .sq {
   width: 120px;
